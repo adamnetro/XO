@@ -1,0 +1,57 @@
+* {
+    font-family: "Rubik", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+:root {
+    --cl1: rgb(32, 32, 32);
+    --cl2: rgb(43, 43, 43);
+    --cl3: rgb(255, 244, 84);
+    --cl4: white;
+    --cl5: rgb(15, 15, 15);
+    --cl6: #2ECC71;
+    --cl7: rgb(20, 20, 20);
+    --cl8: rgb(0, 174, 255);
+    --cl9: gray;
+    --cl10: rgb(32, 32, 32);
+    --cl11: white;
+    --cl12: rgb(49, 49, 49);
+    --clheader: rgb(20, 20, 20);
+    --clbody: rgb(27, 27, 27);
+}
+
+body {
+    background: var(--cl1);
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgItm{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.bgItm input{
+    height: 2em;
+    width: 2em;
+    cursor: pointer;
+    background: var(--cl2);
+    border: 3px solid var(--cl3);
+    outline: none;
+    transition: 0.1s ease;
+    text-align: center;
+    color: var(--cl3);
+    font-size: 4em;
+    user-select: none;
+}
+
+
+.bgItm input:hover{
+    border: 10px solid var(--cl3);
+}
